@@ -59,20 +59,20 @@ export default function ProcessPage() {
   return (
     <>
       {/* Page header */}
-      <div className="bg-[#0c0c0c] pt-32 pb-20 lg:pt-40 lg:pb-28">
+      <Reveal as="div" className="bg-[#0c0c0c] pt-32 pb-20 lg:pt-40 lg:pb-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
-          <span className="text-[13px] font-bold uppercase tracking-[0.2em] text-[#ff6600] anim-fade-up">
+          <span className="text-[13px] font-bold uppercase tracking-[0.2em] text-[#ff6600]">
             How We Work
           </span>
-          <h1 className="mt-3 text-5xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl anim-fade-up d200">
+          <h1 className="mt-3 text-5xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl">
             Our Process
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/40 anim-fade-up d400">
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/40">
             Every great brand starts with a clear process. Here&apos;s how we take
             your vision from concept to reality.
           </p>
         </div>
-      </div>
+      </Reveal>
 
       {/* Timeline */}
       <Reveal className="py-28 lg:py-36 bg-[#0c0c0c]">

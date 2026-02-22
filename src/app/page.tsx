@@ -19,7 +19,7 @@ export default function Home() {
       {/* ============================================================ */}
       {/*  HERO                                                        */}
       {/* ============================================================ */}
-      <div className="relative min-h-screen overflow-hidden bg-[#0c0c0c]">
+      <div className="relative min-h-[100svh] overflow-hidden bg-[#0c0c0c]">
         <video
           src="/background.mp4"
           autoPlay
@@ -29,53 +29,52 @@ export default function Home() {
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        <header className="relative flex min-h-screen items-center">
-          <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-12 px-6 lg:grid-cols-2 lg:items-center lg:px-10">
-            <div className="relative pt-32 lg:pt-0">
-              {/* Circle background behind text */}
-              <div className="absolute -right-10 top-1/2 -translate-y-1/2 h-[700px] w-[700px] rounded-full bg-[#0c0c0c]/70 backdrop-blur-md lg:h-[850px] lg:w-[850px]" />
+        {/* Dark gradient overlay for text legibility */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0c0c0c]/90 via-[#0c0c0c]/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0c0c0c]/80 via-transparent to-[#0c0c0c]/40" />
 
-              <div className="relative z-10">
-                <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 anim-fade-up">
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#ff6600]" />
-                  <span className="text-xs font-semibold uppercase tracking-widest text-white/50">
-                    Design 5 Studio
-                  </span>
-                </div>
+        <header className="relative flex min-h-[100svh] items-center">
+          <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-12 px-5 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-10">
+            <div className="pt-28 sm:pt-32 lg:pt-0">
+              <div className="mb-5 sm:mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 backdrop-blur-sm anim-fade-up">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#ff6600]" />
+                <span className="text-xs font-semibold uppercase tracking-widest text-white/50">
+                  Design 5 Studio
+                </span>
+              </div>
 
-                <h1 className="text-[clamp(3.5rem,8vw,7.5rem)] font-black leading-[0.88] tracking-[-0.04em] text-white anim-fade-up d200">
-                  Get<br />
-                  <span className="text-[#ff6600]">Noticed.</span>
-                </h1>
+              <h1 className="text-[clamp(2.75rem,10vw,7.5rem)] font-black leading-[0.88] tracking-[-0.04em] text-white anim-fade-up d200">
+                Get<br />
+                <span className="text-[#ff6600]">Noticed.</span>
+              </h1>
 
-                <p className="mt-5 text-lg font-medium italic text-white/30 anim-fade-up d400">
-                  &ldquo;We&apos;re all just a bunch of fish in a pond.&rdquo;
-                </p>
+              <p className="mt-4 sm:mt-5 text-base sm:text-lg font-medium italic text-white/30 anim-fade-up d400">
+                &ldquo;We&apos;re all just a bunch of fish in a pond.&rdquo;
+              </p>
 
-                <p className="mt-5 max-w-lg text-[15px] leading-relaxed text-white/50 anim-fade-up d500">
-                  Design 5 Studio focuses on making your brand stand out. Personal
-                  branding, product branding or getting your business noticed is
-                  our number one goal when creating a presence.
-                </p>
+              <p className="mt-4 sm:mt-5 max-w-lg text-sm sm:text-[15px] leading-relaxed text-white/50 anim-fade-up d500">
+                Design 5 Studio focuses on making your brand stand out. Personal
+                branding, product branding or getting your business noticed is
+                our number one goal when creating a presence.
+              </p>
 
-                <div className="mt-10 flex flex-wrap gap-4 anim-fade-up d600">
-                  <Link
-                    href="/contact"
-                    className="group flex items-center gap-3 rounded-full bg-[#ff6600] px-8 py-4 text-[13px] font-bold uppercase tracking-wider text-white transition-all hover:bg-[#ff8533] hover:shadow-xl hover:shadow-[#ff6600]/20"
-                  >
-                    Make a Splash
-                    <ArrowRight
-                      size={16}
-                      className="transition-transform group-hover:translate-x-1"
-                    />
-                  </Link>
-                  <Link
-                    href="/portfolio"
-                    className="flex items-center gap-3 rounded-full border border-white/15 px-8 py-4 text-[13px] font-bold uppercase tracking-wider text-white/70 transition-all hover:border-white/40 hover:text-white"
-                  >
-                    View Portfolio
-                  </Link>
-                </div>
+              <div className="mt-8 sm:mt-10 flex flex-wrap gap-3 sm:gap-4 anim-fade-up d600">
+                <Link
+                  href="/contact"
+                  className="group flex items-center gap-3 rounded-full bg-[#ff6600] px-6 sm:px-8 py-3.5 sm:py-4 text-[13px] font-bold uppercase tracking-wider text-white transition-all hover:bg-[#ff8533] hover:shadow-xl hover:shadow-[#ff6600]/20"
+                >
+                  Make a Splash
+                  <ArrowRight
+                    size={16}
+                    className="transition-transform group-hover:translate-x-1"
+                  />
+                </Link>
+                <Link
+                  href="/portfolio"
+                  className="flex items-center gap-3 rounded-full border border-white/15 px-6 sm:px-8 py-3.5 sm:py-4 text-[13px] font-bold uppercase tracking-wider text-white/70 transition-all hover:border-white/40 hover:text-white"
+                >
+                  View Portfolio
+                </Link>
               </div>
             </div>
 
@@ -84,11 +83,11 @@ export default function Home() {
 
           {/* Bottom bar */}
           <div className="absolute inset-x-0 bottom-0 border-t border-white/[0.06]">
-            <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
-              <span className="text-[11px] uppercase tracking-[0.2em] text-white/20">
+            <div className="mx-auto flex max-w-7xl items-center justify-between px-5 sm:px-6 py-4 sm:py-5 lg:px-10">
+              <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-white/20">
                 Fairfax, Virginia
               </span>
-              <span className="flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-white/20">
+              <span className="flex items-center gap-2 text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-white/20">
                 Scroll to explore
                 <MoveRight size={14} />
               </span>
@@ -100,7 +99,7 @@ export default function Home() {
       {/* ============================================================ */}
       {/*  MARQUEE                                                     */}
       {/* ============================================================ */}
-      <div className="overflow-hidden border-b border-[#e4e4e7] bg-[#fafafa] py-4">
+      <Reveal as="div" className="overflow-hidden border-b border-[#e4e4e7] bg-[#fafafa] py-4">
         <div className="anim-marquee flex w-max gap-12">
           {[
             "Brand Identity",
@@ -125,7 +124,7 @@ export default function Home() {
             </span>
           ))}
         </div>
-      </div>
+      </Reveal>
 
       {/* ============================================================ */}
       {/*  SERVICES PREVIEW (3 cards + link)                           */}
