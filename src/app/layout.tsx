@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Design 5 Studio | Creative Design Agency",
+  title: "Design 5 Studios",
   description:
-    "Design 5 Studio focuses on making your brand stand out. Personal branding, product branding or getting your business noticed is our number one goal.",
+    "Design 5 Studios focuses on making your brand stand out. Personal branding, product branding or getting your business noticed is our number one goal.",
   keywords: [
     "branding",
     "design studio",
@@ -26,6 +26,28 @@ export const metadata: Metadata = {
     "marketing design",
     "packaging design",
   ],
+  openGraph: {
+    title: "Design 5 Studios",
+    description:
+      "Making your brand stand out. Personal branding, product branding or getting your business noticed is our number one goal.",
+    images: [
+      {
+        url: "/images/D5S_LOGO_square_black.png",
+        width: 512,
+        height: 512,
+        alt: "Design 5 Studios",
+      },
+    ],
+    siteName: "Design 5 Studios",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Design 5 Studios",
+    description:
+      "Making your brand stand out. Personal branding, product branding or getting your business noticed is our number one goal.",
+    images: ["/images/D5S_LOGO_square_black.png"],
+  },
 };
 
 export default function RootLayout({

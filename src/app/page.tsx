@@ -26,51 +26,56 @@ export default function Home() {
           loop
           muted
           playsInline
-          className="absolute inset-0 h-full w-full object-cover blur-sm"
+          className="absolute inset-0 h-full w-full object-cover"
         />
 
         <header className="relative flex min-h-screen items-center">
           <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-12 px-6 lg:grid-cols-2 lg:items-center lg:px-10">
-            <div className="pt-32 lg:pt-0">
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 anim-fade-up">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#ff6600]" />
-                <span className="text-xs font-semibold uppercase tracking-widest text-white/50">
-                  Design 5 Studio
-                </span>
-              </div>
+            <div className="relative pt-32 lg:pt-0">
+              {/* Circle background behind text */}
+              <div className="absolute -right-10 top-1/2 -translate-y-1/2 h-[700px] w-[700px] rounded-full bg-[#0c0c0c]/70 backdrop-blur-md lg:h-[850px] lg:w-[850px]" />
 
-              <h1 className="text-[clamp(3.5rem,8vw,7.5rem)] font-black leading-[0.88] tracking-[-0.04em] text-white anim-fade-up d200">
-                Get<br />
-                <span className="text-[#ff6600]">Noticed.</span>
-              </h1>
+              <div className="relative z-10">
+                <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 anim-fade-up">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#ff6600]" />
+                  <span className="text-xs font-semibold uppercase tracking-widest text-white/50">
+                    Design 5 Studio
+                  </span>
+                </div>
 
-              <p className="mt-5 text-lg font-medium italic text-white/30 anim-fade-up d400">
-                &ldquo;We&apos;re all just a bunch of fish in a pond.&rdquo;
-              </p>
+                <h1 className="text-[clamp(3.5rem,8vw,7.5rem)] font-black leading-[0.88] tracking-[-0.04em] text-white anim-fade-up d200">
+                  Get<br />
+                  <span className="text-[#ff6600]">Noticed.</span>
+                </h1>
 
-              <p className="mt-5 max-w-lg text-[15px] leading-relaxed text-white/50 anim-fade-up d500">
-                Design 5 Studio focuses on making your brand stand out. Personal
-                branding, product branding or getting your business noticed is
-                our number one goal when creating a presence.
-              </p>
+                <p className="mt-5 text-lg font-medium italic text-white/30 anim-fade-up d400">
+                  &ldquo;We&apos;re all just a bunch of fish in a pond.&rdquo;
+                </p>
 
-              <div className="mt-10 flex flex-wrap gap-4 anim-fade-up d600">
-                <Link
-                  href="/contact"
-                  className="group flex items-center gap-3 rounded-full bg-[#ff6600] px-8 py-4 text-[13px] font-bold uppercase tracking-wider text-white transition-all hover:bg-[#ff8533] hover:shadow-xl hover:shadow-[#ff6600]/20"
-                >
-                  Make a Splash
-                  <ArrowRight
-                    size={16}
-                    className="transition-transform group-hover:translate-x-1"
-                  />
-                </Link>
-                <Link
-                  href="/portfolio"
-                  className="flex items-center gap-3 rounded-full border border-white/15 px-8 py-4 text-[13px] font-bold uppercase tracking-wider text-white/70 transition-all hover:border-white/40 hover:text-white"
-                >
-                  View Portfolio
-                </Link>
+                <p className="mt-5 max-w-lg text-[15px] leading-relaxed text-white/50 anim-fade-up d500">
+                  Design 5 Studio focuses on making your brand stand out. Personal
+                  branding, product branding or getting your business noticed is
+                  our number one goal when creating a presence.
+                </p>
+
+                <div className="mt-10 flex flex-wrap gap-4 anim-fade-up d600">
+                  <Link
+                    href="/contact"
+                    className="group flex items-center gap-3 rounded-full bg-[#ff6600] px-8 py-4 text-[13px] font-bold uppercase tracking-wider text-white transition-all hover:bg-[#ff8533] hover:shadow-xl hover:shadow-[#ff6600]/20"
+                  >
+                    Make a Splash
+                    <ArrowRight
+                      size={16}
+                      className="transition-transform group-hover:translate-x-1"
+                    />
+                  </Link>
+                  <Link
+                    href="/portfolio"
+                    className="flex items-center gap-3 rounded-full border border-white/15 px-8 py-4 text-[13px] font-bold uppercase tracking-wider text-white/70 transition-all hover:border-white/40 hover:text-white"
+                  >
+                    View Portfolio
+                  </Link>
+                </div>
               </div>
             </div>
 
