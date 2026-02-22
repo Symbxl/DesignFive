@@ -26,7 +26,7 @@ export default function Home() {
           loop
           muted
           playsInline
-          className="absolute inset-0 h-full w-full object-cover blur-[2px]"
+          className="absolute inset-0 h-full w-full object-cover blur-sm"
         />
 
         <header className="relative flex min-h-screen items-center">
